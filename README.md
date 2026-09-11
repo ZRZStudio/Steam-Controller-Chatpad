@@ -36,7 +36,7 @@ Full OG Steam Controller (2015) upgrade and modification video found on the ZRZ 
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=59sTsHHFOmE">
-    <img src="docs/assets/video-thumbnail.png" alt="Watch the ZRZStudio Steam Chatpad project video on YouTube" width="640">
+    <img src="docs/assets/video-thumbnail-2.png" alt="Watch the ZRZStudio Steam Chatpad project video on YouTube" width="640">
   </a>
   <br>
   <a href="https://www.youtube.com/watch?v=59sTsHHFOmE"><strong>▶ Watch the project video on YouTube</strong></a>
@@ -59,7 +59,9 @@ This repository contains the firmware and electrical connection guide. For more 
 > [!IMPORTANT]
 > Use a **3.3 V supply**, an **Arduino Nano ESP32**, and the **isolated Green-button wiring** described in the build guide. Set the host keyboard layout to **English (United Kingdom)**. Some extended symbols use Windows Alt+numpad sequences and are host-dependent.
 
-
+<p align="center">
+  <img src="docs/assets/3.png" alt="Hardware connections" width="100%">
+</p>
 
 
 ## Get started
