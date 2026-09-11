@@ -5,8 +5,8 @@
 <h1 align="center">Steam Chatpad</h1>
 
 <p align="center">
-  <strong>A compact Bluetooth keyboard for your Steam Controller build.</strong><br>
-  Xbox 360 Chatpad firmware for the Arduino Nano ESP32.
+  <strong>A chatpad for the OG Steam Controller</strong><br>
+  using an Xbox 360 chatpad and an Arduino Nano ESP32.
 </p>
 
 <p align="center">
@@ -32,7 +32,7 @@
 
 Steam Chatpad turns an original **Xbox 360 Chatpad** into a **Bluetooth Low Energy HID keyboard**. An Arduino Nano ESP32 reads the Chatpad over UART and sends keyboard input to a paired host.
 
-Created as part of a **ZRZStudio YouTube project**, this firmware is designed for Steam Controller chatpad conversions. It can also be adapted to other builds that need a small physical keyboard. The keyboard uses its own Bluetooth connection to the host.
+Full OG Steam Controller (2015) upgrade and modification video found on the ZRZ YouTube channel. This firmware is designed for Steam Controller chatpad conversions part of the video. It can also be adapted to other builds that need a small physical keyboard. The keyboard uses its own Bluetooth connection to the host.
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=59sTsHHFOmE">
@@ -42,7 +42,7 @@ Created as part of a **ZRZStudio YouTube project**, this firmware is designed fo
   <a href="https://www.youtube.com/watch?v=59sTsHHFOmE"><strong>▶ Watch the project video on YouTube</strong></a>
 </p>
 
-This repository contains the firmware and electrical connection guide. Enclosure files, mounting instructions, and a complete controller power-system design are not included.
+This repository contains the firmware and electrical connection guide. For more details about the build, check out the build video.
 
 ## At a glance
 
