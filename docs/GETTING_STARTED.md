@@ -10,16 +10,14 @@ This firmware powers the chatpad conversion featured in the [full OG Steam Contr
   </a>
 </p>
 
-Prepare the software, upload the firmware, and pair your first host.
-
 ## Before you begin
 
 You will need:
 
 - **Arduino Nano ESP32** and a USB data cable.
 - Original **Xbox 360 Chatpad**.
-- Suitable **regulated 3.3 V supply** and common ground.
-- **Isolated Green switch** connected to D2 and GND.
+- Suitable **regulated 3.3 V supply** and common ground (or USB for testing).
+- **Isolated Green switch** connected to D2 and GND (not needed if always awake or wired).
 - Arduino IDE and a host with Bluetooth LE keyboard support.
 - Optionally, two 47 kΩ resistors and a 100 nF capacitor for supply monitoring.
 
