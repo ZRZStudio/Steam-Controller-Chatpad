@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/banner.svg" alt="Steam Chatpad by ZRZStudio — Xbox 360 Chatpad to Bluetooth LE keyboard" width="100%">
+  <img src="docs/assets/banner.png" alt="Steam Chatpad — Steam Controller with an attached Xbox 360 Chatpad" width="100%">
 </p>
 
 <h1 align="center">Steam Chatpad</h1>
