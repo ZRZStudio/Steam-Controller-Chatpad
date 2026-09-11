@@ -76,4 +76,4 @@ Measured mode requires the A0 divider and reads the regulated rail. Check the wi
 
 [Open a bug report](https://github.com/ZRZStudio/Steam-Controller-Chatpad/issues/new?template=bug_report.md) with the firmware commit, board-core and library versions, host OS/layout, exact reproduction steps, and first compiler error or a short relevant log. For electrical issues, include relevant wiring details or a clear photo.
 
-Review logs and photos before posting publicly. See [contributing](../CONTRIBUTING.md) for testing suggestions.
+
