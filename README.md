@@ -59,6 +59,11 @@ This repository contains the firmware and electrical connection guide. For more 
 > [!IMPORTANT]
 > Use a **3.3 V supply**, an **Arduino Nano ESP32**, and the **isolated Green-button wiring** described in the build guide. Set the host keyboard layout to **English (United Kingdom)**. Some extended symbols use Windows Alt+numpad sequences and are host-dependent.
 
+<p align="center">
+  <img src="docs/assets/1.png" alt="Steam Chatpad — Steam Controller with an attached Xbox 360 Chatpad" width="100%">
+</p>
+
+
 ## Get started
 
 1. **Check the hardware.** Read the [wiring guide](docs/WIRING.md), including the Green-button modification.
