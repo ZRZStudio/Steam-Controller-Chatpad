@@ -18,4 +18,4 @@ This firmware powers the chatpad conversion featured in the [full OG Steam Contr
 | [Configuration](CONFIGURATION.md) | Defaults, power behaviour, BLE options, and calibration. |
 | [Troubleshooting](TROUBLESHOOTING.md) | Common symptoms and practical checks. |
 
-See also the [changelog](../CHANGELOG.md) and [contributor guide](../CONTRIBUTING.md).
+
