@@ -4,6 +4,12 @@
 
 This firmware powers the chatpad conversion featured in the [full OG Steam Controller (2015) upgrade and modification video](https://www.youtube.com/watch?v=59sTsHHFOmE) on the **ZRZ YouTube channel**.
 
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=59sTsHHFOmE">
+    <img src="assets/video-thumbnail.png" alt="Watch the full OG Steam Controller (2015) upgrade and modification video on the ZRZ YouTube channel" width="480">
+  </a>
+</p>
+
 Everyday settings can be changed on the Chatpad and are saved across restarts. Hardware constants are grouped in `namespace Config` near the top of [`SteamChatpad.ino`](../SteamChatpad/SteamChatpad.ino).
 
 ## Defaults

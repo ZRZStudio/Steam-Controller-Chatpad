@@ -36,7 +36,7 @@ Full OG Steam Controller (2015) upgrade and modification video found on the ZRZ 
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=59sTsHHFOmE">
-    <img src="https://i.ytimg.com/vi/59sTsHHFOmE/hqdefault.jpg" alt="Watch the ZRZStudio Steam Chatpad project video on YouTube" width="640">
+    <img src="docs/assets/video-thumbnail.png" alt="Watch the ZRZStudio Steam Chatpad project video on YouTube" width="640">
   </a>
   <br>
   <a href="https://www.youtube.com/watch?v=59sTsHHFOmE"><strong>▶ Watch the project video on YouTube</strong></a>
