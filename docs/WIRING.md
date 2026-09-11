@@ -2,6 +2,8 @@
 
 [← Project home](../README.md) · [Documentation](README.md) · [Getting started](GETTING_STARTED.md)
 
+This firmware powers the chatpad conversion featured in the [full OG Steam Controller (2015) upgrade and modification video](https://www.youtube.com/watch?v=59sTsHHFOmE) on the **ZRZ YouTube channel**.
+
 The default firmware uses a 19,200-baud UART link and a separate wake input from the isolated Green switch.
 
 ## Connection table

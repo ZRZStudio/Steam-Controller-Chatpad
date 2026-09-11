@@ -2,7 +2,9 @@
 
 [← Project home](../README.md) · [Documentation](README.md) · [Wiring](WIRING.md) · [Controls](CONTROLS.md)
 
-Prepare the software, upload the firmware, and pair your first host. This firmware accompanies the [ZRZStudio project video](https://www.youtube.com/watch?v=59sTsHHFOmE).
+This firmware powers the chatpad conversion featured in the [full OG Steam Controller (2015) upgrade and modification video](https://www.youtube.com/watch?v=59sTsHHFOmE) on the **ZRZ YouTube channel**.
+
+Prepare the software, upload the firmware, and pair your first host.
 
 ## Before you begin
 
@@ -15,7 +17,7 @@ You will need:
 - Arduino IDE and a host with Bluetooth LE keyboard support.
 - Optionally, two 47 kΩ resistors and a 100 nF capacitor for supply monitoring.
 
-Read the [wiring guide](WIRING.md) first. This project requires soldering and modification of the Green-button circuit. The repository does not include a mechanical mounting or charging-system design.
+Read the [wiring guide](WIRING.md) first. This project requires soldering and modification of the Green-button circuit. For more details about the wider controller build, follow the video linked above.
 
 ## Download the source
 

@@ -6,6 +6,8 @@ labels: enhancement
 assignees: ''
 ---
 
+This firmware powers the chatpad conversion featured in the [full OG Steam Controller (2015) upgrade and modification video](https://www.youtube.com/watch?v=59sTsHHFOmE) on the **ZRZ YouTube channel**.
+
 ## Use case
 
 What are you trying to do, and what makes it difficult today?
