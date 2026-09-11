@@ -37,6 +37,10 @@ flowchart LR
 
 This is a signal-flow diagram, not a connector-orientation drawing. Identify the actual contacts on your Chatpad before soldering.
 
+<p align="center">
+  <img src="assets/1.png" alt="Wiring" width="100%">
+</p>
+
 > [!IMPORTANT]
 > Disconnect power before soldering or changing connections. The Chatpad power connection and signal interface in this design are **3.3 V**. Do not connect raw battery voltage or 5 V to those connections. Use the [official Nano ESP32 pinout](https://docs.arduino.cc/hardware/nano-esp32/) to identify board and power pins.
 
