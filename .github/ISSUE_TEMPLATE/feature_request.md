@@ -1,19 +1,27 @@
 ---
 name: Feature request
-about: Suggest an improvement
+about: Suggest a firmware, hardware-documentation, or usability improvement
 title: "[Feature] "
 labels: enhancement
 assignees: ''
 ---
 
-## Feature
+## Use case
 
-Describe the change you would like to see.
+What are you trying to do, and what makes it difficult today?
 
-## Why would it be useful?
+## Proposed change
 
-Explain the use case or problem it solves.
+Describe the behaviour or documentation you would like to see.
 
-## Additional information
+## Hardware and compatibility
 
-Add any implementation ideas, diagrams, or references that may help.
+Which Chatpad, board, host OS, or keyboard layout would this affect? Would it need different wiring?
+
+## Alternatives
+
+Describe any workaround or another approach you considered.
+
+## Supporting information
+
+Add sketches, examples, or references if useful.

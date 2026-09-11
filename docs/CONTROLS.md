@@ -1,21 +1,23 @@
 # Controls and settings
 
-## Modifiers
+[← Project home](../README.md) · [Documentation](README.md) · [Configuration](CONFIGURATION.md)
 
-Shift, Green, and Orange support three interaction styles:
+The firmware uses an **English (United Kingdom)** host layout. Green and Orange select symbol layers and provide navigation shortcuts.
 
-- **Tap:** applies to the next key only.
-- **Hold:** remains active while physically held.
-- **Double tap:** latches until cancelled or toggled off.
+## Modifier keys
 
-Pressing a different modifier cancels another one-shot or latched modifier.
+| Gesture | Behaviour |
+| :--- | :--- |
+| Tap Shift, Green, or Orange | Applies the modifier to the next key. |
+| Hold a modifier while pressing keys | Keeps it active while held. |
+| Double-tap a modifier | Latches it until toggled off or cancelled. |
 
-## Green / Orange shortcuts
+Pressing another modifier cancels an existing one-shot or latched modifier. **Shift + Orange** toggles the host's Caps Lock.
 
-Some common combinations are:
+## Navigation shortcuts
 
-| Combination | Action |
-|---|---|
+| Keys | Output |
+| :--- | :--- |
 | Green or Orange + Left Arrow | Up Arrow |
 | Green or Orange + Right Arrow | Down Arrow |
 | Green + Backspace | Delete |
@@ -25,50 +27,96 @@ Some common combinations are:
 | Green + Enter | Home |
 | Orange + Enter | End |
 
-## Green + Orange hold actions
+## Hold shortcuts
 
-| Hold time | Action |
-|---|---|
-| 3 seconds | Select a remembered Bluetooth host |
-| 5 seconds | Open the Chatpad settings menu |
-| 7 seconds | Enter low-power sleep |
+Hold **Green + Orange together**, then **release both**. The duration selects the action:
 
-Release the buttons after the desired hold duration to trigger the action.
+| Hold duration | Action |
+| :--- | :--- |
+| Under 3 seconds | No hold-menu action. |
+| 3 to under 5 seconds | Enter saved-host selection. |
+| 5 to under 7 seconds | Open settings. |
+| 7 seconds or longer | Request light sleep. |
 
-## Settings menu
+The action is selected when the chord ends, not as each threshold passes. For manual sleep, release Green; the firmware will not enter sleep while D2 is held low.
 
-While the settings menu is open, Chatpad input is consumed by the firmware and is not sent to the connected host.
+**Wake:** press and release the isolated Green switch. The firmware restarts and reconnects to the active saved host.
 
-### Main menu
+## Switch between saved hosts
 
-1. Bluetooth
-2. Power
-3. Battery
+1. Hold Green + Orange for **3 to under 5 seconds**, then release.
+2. Press **1**, **2**, or **3** within **10 seconds**.
+3. Wait for the selected host to reconnect.
 
-### Bluetooth
+The People indicator flashes the slot number. Selecting an empty slot cancels selection without starting pairing. Selection closes after 10 seconds if no slot is chosen.
 
-- Pair or replace host slot 1, 2, or 3.
-- Forget an individual host slot.
-- Erase all stored host slots.
-- Select Low, Medium, or High BLE transmit power.
-- Select Eco, Balanced, or Fast reconnect behaviour.
+Slots remember hosts for switching; they do not provide simultaneous typing to three devices.
 
-### Power
+## Use the settings menu
 
-Profiles:
+Open settings with the **5 to under 7 second** hold shortcut.
 
-| Profile | Backlight timeout | Sleep timeout |
-|---|---:|---:|
-| Super Power Saver | 3 s | 12 s |
-| Power Saver | 6 s | 25 s |
-| Normal | 10 s | 60 s |
+| Input | Action |
+| :--- | :--- |
+| Number keys | Enter a menu or choose a value. |
+| Green | Confirm the pending selection. |
+| Orange | Cancel / go back one level; at the main menu, exit. |
+| Backspace | Remove the last digit while editing a numeric timeout. |
+| No input for 30 seconds | Exit settings. |
 
-Backlight and sleep times can also be overridden from the menu.
+Menu input is consumed by the firmware and is not sent to the host. Numeric timeouts also **save automatically three seconds after the last digit**.
 
-### Battery
+### Menu map
 
-Battery reporting can be left at a fixed 100% value or switched to the experimental measured mode when the optional A0 voltage-divider circuit is fitted.
+Paths are number keys pressed **in sequence after opening settings**. Finish with Green where indicated.
 
-## Backlight note
+| Path | Setting | Choice / confirmation |
+| :--- | :--- | :--- |
+| **1 → 1** | Pair / replace host | Slot **1–3**, then Green. |
+| **1 → 2** | Forget host | Slot **1–3**, then Green. |
+| **1 → 2 → 4** | Forget all hosts | Hold Green for **3 seconds**. |
+| **1 → 3** | Bluetooth transmit power | **1** Low · **2** Medium · **3** High, then Green. |
+| **1 → 4** | Reconnect mode | **1** Eco · **2** Balanced · **3** Fast, then Green. |
+| **2 → 1** | Power profile | **1** Super Power Saver · **2** Power Saver · **3** Normal, then Green. |
+| **2 → 2** | Backlight timeout | Enter seconds (**0–30**), then Green or wait 3 seconds. |
+| **2 → 3** | Sleep timeout | Enter seconds (**1–120**), then Green or wait 3 seconds. |
+| **2 → 4** | Reset timeout overrides | Green restores the selected profile's timeouts. |
+| **3 → 1** | Battery reporting | **1** Fixed 100% · **2** Measured, then Green. |
+| **3 → 2** | Report battery now | Green. In fixed mode, reports 100%. |
 
-The original Chatpad controller limits a continuous keyboard-backlight period to roughly six seconds. The firmware deliberately avoids repeatedly retriggering it because doing so creates a visible periodic blink.
+Backlight **0** disables the idle backlight. Values above 30 are clamped to 30. A sleep value of **0**, or above 120, is stored as **120 seconds**; zero does not disable sleep. Selecting a power profile clears custom timeouts.
+
+### Pair or replace a host
+
+1. Open settings.
+2. Press **1 → 1 → slot number → Green**.
+3. On the desired host, pair with **`steam chatpad`**.
+
+Choosing an occupied slot removes that slot's previous bond before pairing. Other slots are retained. If the host already lists an old pairing for this keyboard, remove that entry before pairing again.
+
+### Forget hosts
+
+For one host, use **1 → 2 → slot number → Green**. If no saved hosts remain, the firmware opens fresh pairing into slot 1.
+
+To clear all three slots, use **1 → 2 → 4**, then hold **Green for three seconds**. This removes saved host bonds and starts fresh pairing into slot 1. Other settings are retained.
+
+### LED feedback
+
+| Pattern | Meaning |
+| :--- | :--- |
+| Green and Orange flash together about once per second | Main settings menu. |
+| Green flash count, followed by Orange flash count | Main-menu number, then submenu number. |
+| Green and Orange briefly light together after a choice | A selection is ready for confirmation. |
+| Green confirmation flash | Setting accepted. |
+| Orange confirmation flash | Cancellation or unavailable selection, depending on the action. |
+| People indicator flashes 1, 2, or 3 times | Slot-number feedback. |
+
+For example, **two Green flashes followed by three Orange flashes** identifies **Power → Sleep timeout**.
+
+## Symbols and host layout
+
+Common punctuation targets a UK keyboard layout. Some extended symbols and composed accents are emitted as **Windows Alt+numpad sequences**, rather than Unicode text.
+
+Those keys can depend on Windows settings, application behaviour, and code-page handling. Equivalent extended-symbol output is not established for SteamOS, Linux, macOS, or mobile hosts. Start with ordinary letters and punctuation when checking a new host.
+
+For a mismatch, see [troubleshooting](TROUBLESHOOTING.md#wrong-characters-or-missing-symbols).
