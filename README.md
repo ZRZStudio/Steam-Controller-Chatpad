@@ -146,12 +146,6 @@ Battery reporting defaults to a fixed **100%**. Optional measured mode reads the
 
 Downloads contain **source code**. Compile the sketch in Arduino IDE; a prebuilt firmware binary is not provided.
 
-## Contributing
-
-Reproducible bug reports, documentation fixes, and tested hardware improvements are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request, or use the [issue templates](https://github.com/ZRZStudio/Steam-Controller-Chatpad/issues/new/choose).
-
-When reporting a working build, include board-core and library versions, host OS, and keyboard layout. This helps build a useful compatibility record.
-
 ## Credits and licence
 
 A project from [ZRZStudio](https://github.com/ZRZStudio), built with [HijelHID_BLEKeyboard](https://github.com/HijelHub/HijelHID_BLEKeyboard), [NimBLE-Arduino](https://github.com/h2zero/NimBLE-Arduino), and the Arduino ESP32 ecosystem.
